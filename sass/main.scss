@@ -1,0 +1,43 @@
+@import "_mixin";
+@import "_vars";
+@import "_reset";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+
+/* header */
+
+header{
+    width: auto;
+    height: 50px;
+    @include center;
+    background-color: $bgheader;
+    .logoInelar{
+        width: 120px;
+        height: 40px;
+        padding-top: 10px;
+        a{  
+            @include logo;
+            img{
+                width: $imgSize;
+                height: $imgSize;
+            }
+        }
+    }
+    .paginas{
+        .nav-container{
+            .nav-label{
+                .nav-img{
+                    width: fit-content;
+                    height: fit-content;
+                }
+            }
+            .nav-input{
+                display: none;
+            }
+            .nav-menu{
+                display: none;
+            }
+        }
+    }
+
+
+}

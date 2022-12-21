@@ -1,0 +1,17 @@
+@mixin center {
+
+}
+@mixin logo {
+    font: {
+        size: 1.5em;
+        weight: 700;
+        family: sans-serif;
+    }
+    gap: 4px;
+    color: orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}

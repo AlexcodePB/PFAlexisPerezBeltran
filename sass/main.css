@@ -1,0 +1,53 @@
+/* color vars */
+/* size vars */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+/* header */
+header {
+  width: auto;
+  height: 50px;
+  background-color: whitesmoke;
+}
+header .logoInelar {
+  width: 120px;
+  height: 40px;
+  padding-top: 10px;
+}
+header .logoInelar a {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: sans-serif;
+  gap: 4px;
+  color: orange;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+header .logoInelar a img {
+  width: 30px;
+  height: 30px;
+}
+header .paginas .nav-container .nav-label .nav-img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+header .paginas .nav-container .nav-input {
+  display: none;
+}
+header .paginas .nav-container .nav-menu {
+  display: none;
+}/*# sourceMappingURL=main.css.map */
