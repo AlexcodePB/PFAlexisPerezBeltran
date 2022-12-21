@@ -1,6 +1,8 @@
+/* logo */
+/* menu hamburguesa */
+/* barra de navegacion */
 /* color vars */
 /* size vars */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,34 +12,15 @@
   outline: none;
 }
 
-/* header */
-header {
+#navbar {
   width: auto;
   height: 50px;
-  background-color: whitesmoke;
-}
-header .logoInelar {
-  width: 120px;
-  height: 40px;
-  padding-top: 10px;
-}
-header .logoInelar a {
-  font-size: 1.5em;
-  font-weight: 700;
-  font-family: sans-serif;
-  gap: 4px;
-  color: orange;
+  background: rgb(242, 240, 240);
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
+  justify-content: space-around;
 }
-header .logoInelar a img {
-  width: 30px;
-  height: 30px;
-}
-header .paginas .nav-container .nav-label .nav-img {
+#navbar .container-logo {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -45,9 +28,90 @@ header .paginas .nav-container .nav-label .nav-img {
   height: -moz-fit-content;
   height: fit-content;
 }
-header .paginas .nav-container .nav-input {
+#navbar .container-logo .logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+#navbar .container-logo .logo img {
+  width: 40px;
+  height: 40px;
+}
+#navbar .container-logo .logo a {
+  color: orange;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 1.8em;
+}
+#navbar .paginas .nav-container .nav-label {
+  display: block;
+  cursor: pointer;
+}
+#navbar .paginas .nav-container .nav-label .nav-img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#navbar .paginas .nav-container .nav-input {
   display: none;
 }
-header .paginas .nav-container .nav-menu {
-  display: none;
+#navbar .paginas .nav-container .nav-item {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+#navbar .paginas .nav-container .nav-item:hover {
+  color: black;
+}
+#navbar .paginas .nav-container .nav-menu {
+  position: fixed;
+  top: 50px;
+  bottom: 0;
+  background: orange;
+  width: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+          clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  transition: -webkit-clip-path 1s ease-in-out;
+  transition: clip-path 1s ease-in-out;
+  transition: clip-path 1s ease-in-out, -webkit-clip-path 1s ease-in-out;
+}
+#navbar .paginas .nav-container .nav-input:checked + .nav-menu {
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+
+#hero .img-fondo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#hero .img-fondo .texto-img {
+  color: white;
 }/*# sourceMappingURL=main.css.map */

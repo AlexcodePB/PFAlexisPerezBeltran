@@ -1,0 +1,37 @@
+#navbar{
+    @include navBar;
+    .container-logo{
+        width: fit-content;
+        height: fit-content;
+        .logo{
+            @include imgLogo;
+        }
+    }
+    .paginas{
+        .nav-container{
+            .nav-label{
+                display: block;
+                cursor: pointer;
+                .nav-img{
+                    width: fit-content;
+                    height: fit-content;
+                }
+            }
+            .nav-input{
+                display: none;
+            }
+            .nav-item{
+                @include itemStyle;
+            }
+            .nav-item:hover{
+                color: black;
+            }
+            .nav-menu{
+                @include navMenuStyle
+            }
+            .nav-input:checked + .nav-menu{
+                clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+            }
+        }
+    }
+}

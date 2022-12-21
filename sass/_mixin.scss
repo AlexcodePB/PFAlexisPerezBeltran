@@ -1,17 +1,53 @@
-@mixin center {
-
-}
-@mixin logo {
-    font: {
-        size: 1.5em;
-        weight: 700;
-        family: sans-serif;
-    }
-    gap: 4px;
-    color: orange;
+/* logo */
+@mixin imgLogo{
+    width: fit-content;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 3px;
+    img{
+        width: 40px;
+        height: 40px;
+    }
+    a{
+        color: orange;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 1.8em;
+    }
+}
+/* menu hamburguesa */
+@mixin itemStyle{
+    display: block;
+    color: white;
     text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+@mixin navMenuStyle{
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    background: orange;
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    transition: clip-path 1s ease-in-out;
+}
+/* barra de navegacion */
+@mixin navBar{
+    width: auto;
+    height: 50px;
+    background: rgb(242, 240, 240);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
